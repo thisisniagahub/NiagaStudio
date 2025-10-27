@@ -1,0 +1,7 @@
+{
+  "name": "NiagaStudio",
+  "description": "An AI-powered web app that generates beautiful, geometric Kufic calligraphy from text.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

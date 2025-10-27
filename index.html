@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NiagaStudio</title>
+    
+    <!-- Google Fonts: Inter for UI, Amiri for Arabic text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Amiri', 'serif'],
+          },
+          colors: {
+            background: 'var(--color-background)',
+            surface: 'var(--color-surface)',
+            primary: 'var(--color-primary)',
+            text: 'var(--color-text)',
+            textSecondary: 'var(--color-text-secondary)',
+            border: 'var(--color-border)',
+            success: 'var(--color-success)',
+            error: 'var(--color-error)',
+          }
+        }
+      }
+    }
+    </script>
+
+    <style>
+      /* Apply theme variables to the body for a consistent background */
+      body {
+        background-color: var(--color-background);
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+      }
+    }
+    </script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
